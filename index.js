@@ -31,6 +31,10 @@ document.addEventListener("DOMContentLoaded", () => {
         relatorioButton.addEventListener("click", () => {
             document.getElementById('paginaInicial').style.display = 'none';
             document.getElementById('paginaSecundaria').style.display = 'block';
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
         });
     });
 });
